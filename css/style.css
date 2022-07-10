@@ -1,0 +1,329 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	line-height: 1;
+	font-size: 24px;
+	font-weight: 500;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/*---------------------------------------------------------------------------------NULL END-------------*/
+.wrapper {
+	overflow: hidden;
+}
+
+/*------------------------------HEADER-------------------------------------------------------*/
+
+.header {
+	z-index: 50;
+}
+
+.header {
+	width: 100%;
+ background-color: #007765;
+ height:84px;
+ display: flex;
+ align-items: center;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+  z-index: 21;
+ transition: height 1s ease-in-out;
+}
+.header__logo {
+	width: 184px;
+	height: 45px;
+	margin: 55px;
+	
+}
+
+.header__container {
+	display: flex;
+	min-height: 84px;
+	align-items: center;
+}
+
+.header__menu {
+	margin: 0px 54px 0px 502px;
+	position: absolute;
+	right: 0;
+}
+
+.menu__list {
+	display: flex;
+}
+
+.menu__item {
+
+	margin: 0px 0px 0px 10px;
+	font-weight: 500;
+}
+
+.menu__link {
+	font-size: 24px;
+	color: inherit;
+	color: white;
+}
+/*------------------------------------------------------------------- SECTION AFTER HEADER */
+
+.section_1 {
+	background: url(../images/background.png) 0 0/auto auto no-repeat;
+	background-size: cover;
+	margin-top: 84px; /*Устанавливает величину отступа от верхнего края элемента*/
+	padding-top: 160px; /*Устанавливает значение поля от верхнего края содержимого элемента*/
+	padding-bottom: 160px; /*Устанавливает значение поля от нижнего края содержимого элемента*/
+	width: 100%;
+	
+}
+
+/* ---------------------------------------------^^^^^^^^^^^^^^^-------------------------СЕКЦИЯ 1 / IMAGE */
+
+.section__item {
+	font-style: normal; /*Определяет начертание шрифта — обычное, курсивное или наклонное*/
+	font-weight: 500; /*Устанавливает насыщенность шрифта*/
+	font-size: 75px; /*Определяет размер шрифта элемента*/
+	line-height: 84px; /*Задаёт высоту строки текста*/
+	text-align: center; /*Определяет горизонтальное выравнивание текста в пределах элемента*/
+	color: #fff; /*Определяет цвет текста элемента*/
+}
+/*--------------------------------------------------------------------- КОНЕЦ SECTION 1 */
+.section_2 {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	background-color: #EEEEEE;
+	padding-bottom: 70px;
+
+}
+.title {
+	color: #007765;
+	font-size: 64px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 75px;
+	text-align: center;
+	padding: 52px 0px 16px 0px;
+}
+.text_section_2 {
+	padding: 0px 55px;
+	line-height: 37px; /*Задаёт высоту строки текста*/
+	font-weight: 400;
+	font-size: 32px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1219px;
+}
+.span {
+	font-weight: 700;
+}
+/*--------------------------------------------------------------------- КОНЕЦ SECTION 2 */
+.section_3 {
+	background: url(../images/section3img.png) 0 0/auto auto no-repeat;
+	background-size: cover;
+	width: 100%;
+	padding-bottom: 80px;
+	padding-top: 80px;
+}
+
+.section_3_text {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 56px;
+	text-align: center;
+	color: #FFFFFF;
+	margin: 32px 42px 32px 42px;
+}
+
+/*--------------------------------------------------------------------- КОНЕЦ SECTION 3 */
+
+.section_4 {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	background-color: #FFFFFF;
+	padding-bottom: 70px;
+}
+
+.text_section_4 {
+	padding: 0px 55px;
+	line-height: 37px; /*Задаёт высоту строки текста*/
+	font-weight: 400;
+	font-size: 32px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1219px;
+}
+
+.txtimg {
+	float: left; /*Остальные элементы будут обтекать его с других сторон*/
+	padding-right: 48px; /*Устанавливает значение поля от правого края содержимого элемента*/
+         
+}
+
+.span2 {
+	font-style: italic;
+	font-weight: 400;
+}
+
+/*--------------------------------------------------------------------- КОНЕЦ SECTION 4 */
+
+.section_5 {
+	background-color: #EEEEEE;
+
+}
+
+.figure {
+	margin: 0; /*Расстояние от края элемента до края другог элемента*/
+	padding: 0px; /*Устанавливает значение полей вокруг содержимого элемента*/
+	display: flex; /*Определяет как элемент должен быть показан в документе*/
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.members_block {
+	padding-top: 40px;
+}
+
+.img {
+	width: 350px; /*Устанавливает ширину содержимого элемента*/
+	height: 283px; /*Устанавливает высоту содержимого элемента*/
+	text-align: center; /*Определяет горизонтальное выравнивание текста в пределах элемента*/
+	display: flex; /*Определяет как элемент должен быть показан в документе*/
+	flex-flow: column wrap;
+	align-items: center; /*Выравнивает флекс-элементы внутри контейнера в перпендикулярном направлении*/
+	padding-bottom: 55px; /*Устанавливает значение поля от нижнего края содержимого элемента*/
+	margin: 0px 70px;
+
+
+}
+
+.title5 {
+	color: #007765;
+	font-size: 64px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 75px;
+	text-align: center;
+	padding: 52px 0px 40px 0px;
+}
+
+
+
+.name {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: #007765;
+}
+
+.pname {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #000000;
+	padding-bottom: 28px;
+}
+
+/*--------------------------------------------------------------------- КОНЕЦ SECTION 5 */
+
+.footer {
+	width: 100%;
+ 	background-color: #333333;	
+}
+
+.footer__container {
+
+}
+
+.footer_text {
+	padding: 50px 0px 70px 0px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #FFFFFF;
+
+}
